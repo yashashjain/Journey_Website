@@ -1,0 +1,205 @@
+<html>
+<head>
+<style>
+.header
+{
+
+height:130px;
+background-color:#FF7F26;
+margin-top:-30px;
+margin-left:-8px;
+margin-right:-8px;
+}
+.journy
+{
+position:relative;
+margin-left:20px;
+margin-top:30px;
+}
+.t1
+{
+position:relative;
+float:right;
+right:40px;
+top:-40px;
+color:white;
+}
+div.menu
+{
+font-weight:bold;
+color:white;
+
+text-align:center;
+width:12em;
+}
+
+div.menu:hover a{display:block}
+
+div.menu a{display:none;
+border-top:2px solid #5C1C7D;
+background-color: #d5f5e3;
+width:12em;
+color:black;
+text-decoration:none;
+}
+li
+{
+ style="font-size:20px;font-family:Helvetica;
+}
+
+div.menu a:hover{background-color:#d2b4de;}
+ #container{
+               width:100%;
+               height:100%;
+               margin:0 auto;
+               position:relative;
+              }
+   
+   #container>img{
+                 width:100%;
+                 height:100%;
+                 position:absolute:
+                 }
+#container>.btn{
+                  position:absolute;
+                  width:70px;
+                  border:none;
+                  border-radius:30px;
+                  top:47%;
+                  font-size:40px;
+                  }
+  #container>#btn1{
+                   position:absolute;
+                   float:left;
+                   }
+  #container>#btn1:hover{
+                        box-shadow:10px 0px 20px 10px black
+                        }                                                                            
+  #container>#btn2{
+                   position:absolute;
+                   float:right;
+                   }
+  #container>#btn2:hover{
+                        box-shadow:10px 0px 20px 10px black
+   }
+     .x{position:absolute;left:50%;top:30%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+	 
+  </style> 
+</head>
+<body>
+<div class="header">
+             <div class="journy">
+             <a href="g.html"><img src="loo.jpg" ></a>
+             </div>
+             <div>
+                 
+                  <table class="t1" cellpadding="1">
+                           <tr>
+                           
+                          <td> <div class="menu">Travel
+                          <a href="hotelnew.html">Hotels </a>
+                          <a href="restaurent.html">Restaurents </a>
+                          <a href="#">Things to do!</a>
+                         
+                          </div></td>
+                           
+                          <td> <div class="menu">Transport
+                          <a href="plane.html">Flight </a>
+                          <a href="bus.html">Bus </a>
+                          <a href="train.html">Train </a>
+                         
+                         
+                          </div></td>
+                           
+                          <td> <div class="menu">About
+                          <a href="web.html">Website </a>
+                          <a href="dev.html">Devlopers</a>
+                          
+                         
+                          </div></td>
+                           
+                           <td> <div class="menu">contact
+                          <a href="custmer.html">Custmare care</a>
+                          <a href="email.html">E-mail</a> 
+                           <a href="adre.html">Address </a>
+                          
+                         
+                          </div></td>
+                        
+                           <td>
+						  <div >
+						 <a href="firstpage.html"> <button style="color:#fff;background-color:#5cb85c;border-color:#4cae4c;border-radius:6px">Get start !</button></a>
+						 </div>
+                          </td>
+                          
+                         
+                          </div></td>
+                           </tr>
+                           </table>
+                          
+             </div>
+             
+      </div>
+
+</div>
+<div id="container">
+ 
+  <img class="Slides" src="slide1.jpg" style="width:100%"><p class="x"style="font-family:camfortaa;font-size:70px;color:white"><strong>Things to do</strong></p></>
+  
+ 
+  <img class="Slides" src="slide2.jpg" style="width:100%">
+  <img class="Slides" src="slide3.jpg" style="width:100%">
+  <img class="Slides" src="slide4.jpg" style="width:100%">
+  <img class="Slides" src="slide5.jpg" style="width:100%">
+  <button class="btn" id="btn1" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="btn" id="btn2" onclick="plusDivs(1)"style="right:0">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<h1 style="text-align:center;font-size:60px">What are you doing? </h1>
+<div style="width:80%;margin-top:100px;margin-left:150px;margin-right:200px">
+ <div style="margin-right:10px">
+  <div style="float:left">
+  <img src="plane.jpg" alt="t4"/>
+   <p style="font-size:20px;text-align:center;border:2px solid red;border-radius:5px;background-color:grey;color:white"><b>fly your height</b></p>
+  </div> 
+ <div style="float:right">
+  <img src="skat.jpg" alt="t5"/>
+   <p style="font-size:20px;text-align:center;border:2px solid red;border-radius:5px;background-color:grey;color:white"><b>slice on ice</b></p>
+  </div>
+</div> 
+</div>
+<div style="width:80%;margin-top:100px;margin-left:150px;margin-right:200px">
+ <div style="margin-right:10px">
+  <div style="float:left">
+  <img src="swim.jpg" alt="t4"/>
+   <p style="font-size:20px;text-align:center;border:2px solid red;border-radius:5px;background-color:grey;color:white"><b>deep your breath</b></p>
+  </div> 
+ <div style="float:right">
+  <img src="cycle.jpg" alt="t5"/>
+   <p style="font-size:20px;text-align:center;border:2px solid red;border-radius:5px;background-color:grey;color:white"><b>track your path</b></p>
+  </div>
+ </div> 
+</div>
+ 
+ </body>
+</html>
